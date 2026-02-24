@@ -109,7 +109,9 @@ def find_safe_occupancy(I0: int, beta_per_person_density: dict, ventilation: str
 # ─────────────────────────────────────────────
 # UI – Sidebar inputs
 # ─────────────────────────────────────────────
-st.sidebar.title("Room & Scenario Parameters")
+st.sidebar.markdown("<div style='margin-top: -3rem;'>", unsafe_allow_html=True)
+st.sidebar.title("🔧 Room & Scenario Parameters")
+st.sidebar.markdown("</div>", unsafe_allow_html=True)
 
 st.sidebar.markdown('<p class="section-header">Room Dimensions</p>', unsafe_allow_html=True)
 length = st.sidebar.number_input("Length (m)", min_value=1.0, max_value=500.0, value=10.0, step=0.5)
