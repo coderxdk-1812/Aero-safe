@@ -109,7 +109,7 @@ def find_safe_occupancy(I0: int, beta_per_person_density: dict, ventilation: str
 # ─────────────────────────────────────────────
 # UI – Sidebar inputs
 # ─────────────────────────────────────────────
-st.sidebar.title("🔧 Room & Scenario Parameters")
+st.sidebar.title("Room & Scenario Parameters")
 
 st.sidebar.markdown('<p class="section-header">Room Dimensions</p>', unsafe_allow_html=True)
 length = st.sidebar.number_input("Length (m)", min_value=1.0, max_value=500.0, value=10.0, step=0.5)
@@ -250,7 +250,7 @@ st.markdown("---")
 detail_col1, detail_col2 = st.columns(2)
 
 with detail_col1:
-    st.subheader("📊 Simulation Parameters")
+    st.subheader("Simulation Parameters")
     params = {
         "Room Dimensions": f"{length}m × {width}m × {height}m",
         "Floor Area": f"{floor_area:.1f} m²",
@@ -266,7 +266,7 @@ with detail_col1:
         st.markdown(f"**{k}:** {v}")
 
 with detail_col2:
-    st.subheader("📈 Epidemiological Results")
+    st.subheader("Epidemiological Results")
     results = {
         "Base β (transmission rate)": f"{BASE_BETA}",
         "Ventilation Multiplier": f"{VENTILATION_MULTIPLIERS[ventilation]}",
@@ -286,7 +286,7 @@ with detail_col2:
 
 # ── Sensitivity table ────────────────────────
 st.markdown("---")
-st.subheader("🔬 Scenario Sensitivity – Ventilation vs Mask Compliance")
+st.subheader("Scenario Sensitivity – Ventilation vs Mask Compliance")
 
 vent_levels = ["Low", "Medium", "High"]
 mask_levels = [0, 25, 50, 75, 100]
