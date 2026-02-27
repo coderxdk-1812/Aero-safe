@@ -7,7 +7,7 @@ import plotly.express as px
 # Page config
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="AeroSafe: Indoor Pandemic Risk Modeller",
+    page_title="AeroSafe",
     page_icon="🦠",
     layout="wide",
 )
@@ -178,7 +178,7 @@ if compare_on:
 # ─────────────────────────────────────────────
 # Main page layout
 # ─────────────────────────────────────────────
-st.title("🦠 Indoor Pandemic Risk Modeller")
+st.title("🦠 AeroSafe: Indoor Pandemic Risk Modeller")
 st.markdown("Real-time SIR simulation to inform ventilation standards, occupancy planning and intervention strategies.")
 
 # ── KPI row ──────────────────────────────────
