@@ -7,7 +7,7 @@ import plotly.express as px
 # Page config
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="Indoor Pandemic Risk Modeller",
+    page_title="AeroSafe: Indoor Pandemic Risk Modeller",
     page_icon="🦠",
     layout="wide",
 )
@@ -110,7 +110,7 @@ def find_safe_occupancy(I0: int, beta_per_person_density: dict, ventilation: str
 # UI – Sidebar inputs
 # ─────────────────────────────────────────────
 st.sidebar.markdown("<div style='margin-top: -3rem;'>", unsafe_allow_html=True)
-st.sidebar.title("🔧 Room & Scenario Parameters")
+st.sidebar.title("Room & Scenario Parameters")
 st.sidebar.markdown("</div>", unsafe_allow_html=True)
 
 st.sidebar.markdown('<p class="section-header">Room Dimensions</p>', unsafe_allow_html=True)
